@@ -1,0 +1,1 @@
+Tool C# Window Form Apps chụp ảnh màn hình đọc chữ xuất file
