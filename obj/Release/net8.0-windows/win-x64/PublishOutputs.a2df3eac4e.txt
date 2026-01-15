@@ -1,0 +1,13 @@
+D:\Screenshot OCR.pdb
+D:\tessdata\eng.traineddata
+D:\tessdata\vie.traineddata
+D:\x86\leptonica-1.82.0.dll
+D:\x86\tesseract50.dll
+D:\x64\leptonica-1.82.0.dll
+D:\x64\tesseract50.dll
+D:\D3DCompiler_47_cor3.dll
+D:\PenImc_cor3.dll
+D:\PresentationNative_cor3.dll
+D:\vcruntime140_cor3.dll
+D:\wpfgfx_cor3.dll
+D:\Screenshot OCR.exe

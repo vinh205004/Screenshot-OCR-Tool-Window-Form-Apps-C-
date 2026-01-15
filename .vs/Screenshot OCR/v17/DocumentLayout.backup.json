@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|d:\\tool-c# winform apps\\screenshot ocr\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|d:\\tool-c# winform apps\\screenshot ocr\\overlayform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|solutionrelative:overlayform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\overlayform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|solutionrelative:overlayform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OverlayForm.cs",
+              "DocumentMoniker": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\OverlayForm.cs",
+              "RelativeDocumentMoniker": "OverlayForm.cs",
+              "ToolTip": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\OverlayForm.cs",
+              "RelativeToolTip": "OverlayForm.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAADwv4QAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:19:03.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAwGEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:06:08.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OverlayForm.cs [Design]",
+              "DocumentMoniker": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\OverlayForm.cs",
+              "RelativeDocumentMoniker": "OverlayForm.cs",
+              "ToolTip": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\OverlayForm.cs [Design]",
+              "RelativeToolTip": "OverlayForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:19:00.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:08:15.02Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
