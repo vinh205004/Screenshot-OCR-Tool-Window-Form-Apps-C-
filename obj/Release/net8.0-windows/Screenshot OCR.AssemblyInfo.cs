@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Screenshot OCR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b61d5705f2e093c0e8ca0dfd83270f17e1b1235")]
 [assembly: System.Reflection.AssemblyProductAttribute("Screenshot OCR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Screenshot OCR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

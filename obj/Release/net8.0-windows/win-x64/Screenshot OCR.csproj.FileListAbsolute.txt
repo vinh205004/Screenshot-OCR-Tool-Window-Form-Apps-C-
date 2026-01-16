@@ -483,3 +483,4 @@ D:\TOOL-C# WinForm Apps\Screenshot OCR\obj\Release\net8.0-windows\win-x64\refint
 D:\TOOL-C# WinForm Apps\Screenshot OCR\obj\Release\net8.0-windows\win-x64\Screenshot OCR.pdb
 D:\TOOL-C# WinForm Apps\Screenshot OCR\obj\Release\net8.0-windows\win-x64\Screenshot OCR.genruntimeconfig.cache
 D:\TOOL-C# WinForm Apps\Screenshot OCR\obj\Release\net8.0-windows\win-x64\ref\Screenshot OCR.dll
+D:\TOOL-C# WinForm Apps\Screenshot OCR\obj\Release\net8.0-windows\win-x64\Screenshot OCR.sourcelink.json

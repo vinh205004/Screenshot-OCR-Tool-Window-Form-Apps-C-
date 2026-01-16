@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "y3PYYOgufNI=",
+  "dgSpecHash": "Y6e0wRxuH3c=",
   "success": true,
   "projectFilePath": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\Screenshot OCR.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\tesseract\\5.2.0\\tesseract.5.2.0.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\tesseract\\5.2.0\\tesseract.5.2.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
   ],
   "logs": []
 }

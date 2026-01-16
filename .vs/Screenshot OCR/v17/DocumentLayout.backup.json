@@ -7,6 +7,17 @@
       "RelativeMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|d:\\tool-c# winform apps\\screenshot ocr\\screenshot ocr.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|solutionrelative:screenshot ocr.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.308\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|d:\\tool-c# winform apps\\screenshot ocr\\screenshot ocr.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|solutionrelative:screenshot ocr.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|d:\\tool-c# winform apps\\screenshot ocr\\overlayform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D490D8D-C500-4BDB-8EB8-7D757E82EF8B}|Screenshot OCR.csproj|solutionrelative:overlayform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +37,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,6 +62,42 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Screenshot OCR",
+              "DocumentMoniker": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\Screenshot OCR.csproj",
+              "RelativeDocumentMoniker": "Screenshot OCR.csproj",
+              "ToolTip": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\Screenshot OCR.csproj",
+              "RelativeToolTip": "Screenshot OCR.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-16T04:53:48.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Microsoft.NET.TargetFrameworkInference.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAuwOUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-01-16T04:52:13.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Screenshot OCR",
+              "DocumentMoniker": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\Screenshot OCR.csproj",
+              "RelativeDocumentMoniker": "Screenshot OCR.csproj",
+              "ToolTip": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\Screenshot OCR.csproj",
+              "RelativeToolTip": "Screenshot OCR.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-16T04:36:00.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "OverlayForm.cs",
               "DocumentMoniker": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\OverlayForm.cs",
               "RelativeDocumentMoniker": "OverlayForm.cs",
@@ -69,7 +116,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAwGEAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAkwJQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T17:06:08.23Z",
               "EditorCaption": ""
@@ -80,18 +127,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "OverlayForm.cs [Design]",
               "DocumentMoniker": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\OverlayForm.cs",
               "RelativeDocumentMoniker": "OverlayForm.cs",
               "ToolTip": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\OverlayForm.cs [Design]",
               "RelativeToolTip": "OverlayForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T17:19:00.575Z"
+              "WhenOpened": "2026-01-15T17:19:00.575Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\TOOL-C# WinForm Apps\\Screenshot OCR\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",

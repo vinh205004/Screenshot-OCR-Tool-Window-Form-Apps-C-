@@ -22,3 +22,6 @@ D:\TOOL-C# WinForm Apps\Screenshot OCR\obj\Debug\net8.0-windows\Screenshot OCR.p
 D:\TOOL-C# WinForm Apps\Screenshot OCR\obj\Debug\net8.0-windows\Screenshot OCR.genruntimeconfig.cache
 D:\TOOL-C# WinForm Apps\Screenshot OCR\obj\Debug\net8.0-windows\ref\Screenshot OCR.dll
 D:\TOOL-C# WinForm Apps\Screenshot OCR\obj\Debug\net8.0-windows\Screenshot_OCR.OverlayForm.resources
+D:\TOOL-C# WinForm Apps\Screenshot OCR\bin\Debug\net8.0-windows\tessdata\eng.traineddata
+D:\TOOL-C# WinForm Apps\Screenshot OCR\bin\Debug\net8.0-windows\tessdata\vie.traineddata
+D:\TOOL-C# WinForm Apps\Screenshot OCR\obj\Debug\net8.0-windows\Screenshot OCR.sourcelink.json

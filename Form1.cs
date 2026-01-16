@@ -3,7 +3,9 @@ using System.Drawing;
 using System.Windows.Forms;
 using Tesseract; 
 using System.IO; 
-using System.Drawing.Imaging; 
+using System.Drawing.Imaging;
+using Windows.Media.Ocr;
+using Windows.Globalization;
 
 namespace Screenshot_OCR
 {
@@ -40,15 +42,16 @@ namespace Screenshot_OCR
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                // 1. Ẩn Form chính đi
+                // 1. Ẩn Form chính
                 this.Hide();
-                System.Threading.Thread.Sleep(200); // Chờ xíu cho nó ẩn hẳn
+                // Dùng Task.Delay thay cho Thread.Sleep để không bị đơ UI
+                await System.Threading.Tasks.Task.Delay(200);
 
-                // 2. Chụp toàn bộ màn hình trước
+                // 2. Chụp màn hình
                 Bitmap fullScreen = new Bitmap(Screen.PrimaryScreen.Bounds.Width,
                                                Screen.PrimaryScreen.Bounds.Height);
                 using (Graphics g = Graphics.FromImage(fullScreen))
@@ -56,41 +59,70 @@ namespace Screenshot_OCR
                     g.CopyFromScreen(0, 0, 0, 0, fullScreen.Size);
                 }
 
-                // 3. Mở cái OverlayForm lên để người dùng kéo chuột
+                // 3. Mở OverlayForm
                 using (OverlayForm overlay = new OverlayForm())
                 {
-                    overlay.OriginalScreenshot = fullScreen; // Truyền ảnh chụp vào
+                    overlay.OriginalScreenshot = fullScreen;
 
-                    // Chờ người dùng kéo xong và bấm OK
                     if (overlay.ShowDialog() == DialogResult.OK)
                     {
-                        // Lấy ảnh đã cắt
+                        // Lấy ảnh cắt được
                         Bitmap resultImage = overlay.CroppedImage;
-                        pictureBox2.Image = resultImage; // Hiện lên PictureBox
-                        this.Show(); // Hiện lại tool chính
+                        pictureBox2.Image = resultImage; // Hiện ảnh lên (nhớ check tên pictureBox có đúng là 2 hay 1 nhé)
+                        this.Show(); // Hiện lại tool chính ngay
 
-                        // --- GỌI TESSERACT ĐỂ ĐỌC CHỮ ---
+                        // --- BẮT ĐẦU XỬ LÝ OCR (ĐÃ SỬA) ---
                         try
                         {
+                            // [QUAN TRỌNG] Lấy đường dẫn gốc của file EXE
+                            string exePath = AppContext.BaseDirectory;
+                            string tessDataPath = System.IO.Path.Combine(exePath, "tessdata");
+                            string x64Path = System.IO.Path.Combine(exePath, "x64");
+
+                            // [KIỂM TRA 1] Check folder Data
+                            if (!System.IO.Directory.Exists(tessDataPath))
+                            {
+                                MessageBox.Show($"Lỗi: Không tìm thấy folder 'tessdata' tại:\n{tessDataPath}");
+                                return;
+                            }
+
+                            // [KIỂM TRA 2] Check folder Thư viện x64
+                            // Đây là nguyên nhân chính gây lỗi TargetInvocationException
+                            if (!System.IO.Directory.Exists(x64Path))
+                            {
+                                MessageBox.Show($"Lỗi: Không tìm thấy folder 'x64' chứa file DLL tại:\n{x64Path}\n\nÔng nhớ copy folder x64 từ bin/Debug sang đây nhé!");
+                                return;
+                            }
+
+                            // [THỦ THUẬT CAO CẤP] Ép Windows nhận diện folder x64
+                            // Dòng này giúp Tesseract tìm thấy file DLL leptonica và tesseract50
+                            string pathVar = Environment.GetEnvironmentVariable("PATH");
+                            Environment.SetEnvironmentVariable("PATH", x64Path + ";" + pathVar);
+
+                            // Phóng to ảnh để đọc cho nét
                             using (Bitmap scaledImage = ScaleImage(resultImage, 3.0f))
                             {
                                 using (var stream = new System.IO.MemoryStream())
                                 {
-                                    // Lưu ảnh ĐÃ PHÓNG TO vào RAM để đọc
                                     scaledImage.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
                                     stream.Position = 0;
 
                                     using (var img = Tesseract.Pix.LoadFromMemory(stream.ToArray()))
                                     {
-                                        // Nhớ dùng "vie" nhé (đảm bảo đã chép file data 'best' vào)
-                                        using (var engine = new Tesseract.TesseractEngine(@"./tessdata", "vie", Tesseract.EngineMode.Default))
+                                        // Khởi tạo Engine với đường dẫn đã check kỹ
+                                        using (var engine = new Tesseract.TesseractEngine(tessDataPath, "vie", Tesseract.EngineMode.Default))
                                         {
-                                            // Mẹo: Set biến này để Tesseract chỉ nhận diện ký tự (bỏ qua nhiễu)
                                             engine.SetVariable("preserve_interword_spaces", "1");
 
                                             using (var page = engine.Process(img))
                                             {
-                                                richTextBox1.Text = page.GetText();
+                                                string text = page.GetText();
+
+                                                // Kiểm tra nếu không đọc được gì
+                                                if (string.IsNullOrWhiteSpace(text))
+                                                    richTextBox1.Text = "Không đọc được chữ nào (hoặc ảnh mờ quá).";
+                                                else
+                                                    richTextBox1.Text = text;
                                             }
                                         }
                                     }
@@ -99,20 +131,21 @@ namespace Screenshot_OCR
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show("Lỗi đọc chữ (có thể do chưa tải file data): " + ex.Message);
+                            // Bắt lỗi chi tiết nhất có thể
+                            string rootCause = ex.InnerException != null ? ex.InnerException.Message : "Không có Inner Exception";
+                            MessageBox.Show($"Lỗi OCR:\n- Message: {ex.Message}\n- Root Cause: {rootCause}\n\n*Khả năng cao là thiếu file DLL trong folder x64*", "Lỗi Tesseract");
                         }
                     }
                     else
                     {
-                        // Nếu người dùng bấm ESC hoặc không chọn gì
-                        this.Show();
+                        this.Show(); // Hiện lại nếu hủy
                     }
                 }
             }
             catch (Exception ex)
             {
                 this.Show();
-                MessageBox.Show("Lỗi: " + ex.Message);
+                MessageBox.Show("Lỗi chụp màn hình: " + ex.Message);
             }
         }
         //LƯU ẢNH ĐÃ CHỤP
